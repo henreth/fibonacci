@@ -1,21 +1,13 @@
-.input-container {
-  display: flex;
-  flex-direction: row;
+.main-container{
+  display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 25vh;
+  margin-top: 5vh;
   font-size: 15vh
 }
 
-.num-input {
-  border: none;
-  background-color: inherit;
-  color: inherit;
-  font-size: inherit;
-  text-align: right;
-}
-
-.input-ending{
-  font-size: 10vh;
+.title{
+  text-decoration: underline;
 }

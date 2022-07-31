@@ -5,7 +5,6 @@ import './App.css';
 function App() {
   let [input, setInput] = useState(0)
 
-
   const numInputRef = useRef<HTMLInputElement>(null);
 
   function handleInputChange() {
@@ -14,13 +13,14 @@ function App() {
 
 
   return (
-    <>
+    <div className='main-container'>
+    <div className='title'>The Fibonacci Sequence</div>
     <Input
       input={input}
       handleInputChange={handleInputChange}
       numInputRef={numInputRef}
     />
-    </>
+    </div>
   );
 
 }

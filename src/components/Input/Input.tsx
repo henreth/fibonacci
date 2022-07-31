@@ -1,6 +1,5 @@
 import React from "react"
-
-
+import './Input.css'
 
 const Input: React.FC<{input:number, handleInputChange: any, numInputRef: any}> = ({input, handleInputChange, numInputRef}) => {
 
@@ -38,7 +37,6 @@ const Input: React.FC<{input:number, handleInputChange: any, numInputRef: any}> 
     memo[num] = res
     return res
 }
-  console.log(typeof(fib(6)))
 
     return <div className='input-container'>
         <input
@@ -53,7 +51,7 @@ const Input: React.FC<{input:number, handleInputChange: any, numInputRef: any}> 
             onChange={handleInputChange} />
         <div className='input-ending'>{ending}</div>
         <div>:</div>
-        <div>{fib(input)}</div>
+        <div className='result'>{fib(input)}</div>
     </div>;
 }
 
