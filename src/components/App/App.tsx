@@ -27,8 +27,11 @@ function App() {
     return res
 }
   console.log(typeof(fib(6)))
+
+  let stringInput = result.toString().split('')
+  let lastDigit = Number(stringInput[stringInput.length-1])
   
-  switch(result){
+  switch(lastDigit){
     case 3:
       ending = 'rd'
       break
@@ -49,14 +52,14 @@ function App() {
         className='num-input'
         type='number'
         min='0'
-        max='100'
+        max='99'
         step='1'
         value={result ? result : ''}
-        placeholder='Enter'
+        placeholder='0'
         ref={numInputRef}
         onChange={handleResultChange}
       />
-      <div>{ending}</div>
+      <div className='input-ending'>{ending}</div>
       <div>:</div>
       <div>{fib(result)}</div>
     </div>

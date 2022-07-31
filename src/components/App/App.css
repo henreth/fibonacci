@@ -13,4 +13,9 @@
   background-color: inherit;
   color: inherit;
   font-size: inherit;
+  text-align: right;
+}
+
+.input-ending{
+  font-size: 10vh;
 }
