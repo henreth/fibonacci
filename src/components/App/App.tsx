@@ -16,6 +16,14 @@ function App() {
     return fibonacci(num-1) + fibonacci(num-2)
   }
 
+  function fib(num:number, memo = [undefined,1,1]): any { 
+    if (memo[num] !== undefined) return memo[num]
+    let res = fib(num - 1, memo) + fib(num - 2, memo)
+    memo[num] = res
+    return res
+}
+
+
   return (
     <>
     <input 
@@ -27,8 +35,9 @@ function App() {
       ref={numInputRef}
       onChange={handleResultChange}
     />
-    <div>{fibonacci(6)}</div>
-    <div>{result}</div>
+    <div>{fibonacci(result)}</div>
+    {/* <div>{fib(result)}</div> */}
+    {/* <div>{result}</div> */}
     </>
   );
 }
