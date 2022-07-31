@@ -1,44 +1,42 @@
-import React, { useState, useRef} from 'react';
+import React, { useState, useRef } from 'react';
 import './App.css';
 
 function App() {
-  let [result,setResult] = useState(0)
-  
+  let [result, setResult] = useState(0)
+
   const numInputRef = useRef<HTMLInputElement>(null);
 
-  function handleResultChange(){
+  function handleResultChange() {
     setResult(Number(numInputRef.current!.value))
   }
 
 
-  function fibonacci(num: number): any{
+  function fibonacci(num: number): any {
     if (num <= 2) return 1
-    return fibonacci(num-1) + fibonacci(num-2)
+    return fibonacci(num - 1) + fibonacci(num - 2)
   }
 
-  function fib(num:number, memo = [undefined,1,1]): any { 
+  function fib(num: number, memo = [undefined, 1, 1]): any {
     if (memo[num] !== undefined) return memo[num]
     let res = fib(num - 1, memo) + fib(num - 2, memo)
     memo[num] = res
     return res
-}
+  }
 
 
   return (
-    <>
-    <input 
-      type='number'
-      min='0'
-      step='1'
-      value={result ? result : ''}
-      placeholder='Enter a Number'
-      ref={numInputRef}
-      onChange={handleResultChange}
-    />
-    <div>{fibonacci(result)}</div>
-    {/* <div>{fib(result)}</div> */}
-    {/* <div>{result}</div> */}
-    </>
+    <div className='main-container'>
+      <input
+        type='number'
+        min='0'
+        step='1'
+        value={result ? result : ''}
+        placeholder='Enter a Number'
+        ref={numInputRef}
+        onChange={handleResultChange}
+      />
+      <div>{fibonacci(result)}</div>
+    </div>
   );
 }
 
