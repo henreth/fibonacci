@@ -19,7 +19,7 @@ export default function App() {
     memo[num] = res
     return res
 }
-  const sum = <div>{input-1}:{fib(input-1)} + {input-2}:{fib(input-2)}</div>
+  const sum = <div className='sum'>{input-1}:<span>{fib(input-1)}</span> + {input-2}:<span>{fib(input-2)}</span></div>
   const sumToDisplay = input > 1 ? sum : ''
       
   return (

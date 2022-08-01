@@ -5,5 +5,22 @@
   align-items: center;
   align-content: center;
   margin-top: 5vh;
-  font-size: 15vh
+  font-size: 15vh;
+}
+
+.sum {
+  font-size: 7.5vh;
+  transition: .5s;
+  opacity: .25;
+  user-select: none;
+}
+
+.sum:hover{
+  font-size: 10vh;
+  transition: .5s;
+  opacity: .75;
+}
+
+.sum span{
+  opacity: .5;
 }
