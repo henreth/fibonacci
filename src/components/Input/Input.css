@@ -15,9 +15,15 @@
   text-align: right;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 .input-ending{
-  margin-left: -3%;
   font-size: 10vh;
+  user-select: none;
 }
 
 .result{
@@ -28,4 +34,5 @@
   margin-left: 2%;
   margin-right: 2%;
   font-size: 10vh;
+  user-select: none;
 }
