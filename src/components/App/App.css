@@ -15,11 +15,11 @@
   user-select: none;
 }
 
-.sum:hover{
+/* .sum:hover{
   font-size: 10vh;
   transition: .5s;
   opacity: .75;
-}
+} */
 
 .sum span{
   opacity: .5;
