@@ -16,6 +16,7 @@
 }
 
 .input-ending{
+  margin-left: -3%;
   font-size: 10vh;
 }
 
@@ -24,5 +25,7 @@
 }
 
 .divider{
+  margin-left: 2%;
+  margin-right: 2%;
   font-size: 10vh;
 }
