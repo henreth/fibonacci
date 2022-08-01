@@ -22,3 +22,7 @@
 .result{
   color: rgb(255, 255, 255);
 }
+
+.divider{
+  font-size: 10vh;
+}

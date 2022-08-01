@@ -50,7 +50,7 @@ const Input: React.FC<{input:number, handleInputChange: any, numInputRef: any}> 
             ref={numInputRef}
             onChange={handleInputChange} />
         <div className='input-ending'>{ending}</div>
-        <div>:</div>
+        <div className='divider'>:</div>
         <div className='result'>{fib(input)}</div>
     </div>)
 }
