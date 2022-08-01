@@ -38,7 +38,7 @@ const Input: React.FC<{input:number, handleInputChange: any, numInputRef: any}> 
     return res
 }
 
-    return <div className='input-container'>
+    return (<div className='input-container'>
         <input
             className='num-input'
             type='number'
@@ -52,7 +52,7 @@ const Input: React.FC<{input:number, handleInputChange: any, numInputRef: any}> 
         <div className='input-ending'>{ending}</div>
         <div>:</div>
         <div className='result'>{fib(input)}</div>
-    </div>;
+    </div>)
 }
 
 export default Input

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import Header from '../Header/Header';
 import Input from '../Input/Input';
 import './App.css';
 
@@ -10,10 +11,10 @@ export default function App() {
   function handleInputChange() {
     setInput(Number(numInputRef.current!.value))
   }
-
+  
   return (
     <div className='main-container'>
-      <div className='title'>The Fibonacci Sequence</div>
+      <Header/>
       <Input
         input={input}
         handleInputChange={handleInputChange}
