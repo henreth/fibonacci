@@ -7,6 +7,7 @@ const Input: React.FC<{ input: number, handleInputChange: any, numInputRef: any 
 
     let stringInput = input.toString().split('')
     let lastDigit = Number(stringInput[stringInput.length - 1])
+    let secondLastDigit = Number(stringInput[stringInput.length - 2])
 
     switch (lastDigit) {
         case 3:
@@ -23,12 +24,20 @@ const Input: React.FC<{ input: number, handleInputChange: any, numInputRef: any 
             break
     }
 
+    switch(secondLastDigit+lastDigit){
+        case 2:
+        case 3:
+        case 4:
+            ending = 'th'
+            break
+    }
+
     function fibonacci(num: number): any {
         if (num <= 2) return 1
         return fibonacci(num - 1) + fibonacci(num - 2)
     }
 
-    function fib(num: number, memo: { [key: string]: any } = {}): any { // solve answer once and store in memo
+    function fib(num: number, memo: { [key: string]: any } = {}): any { 
         if (memo[num] !== undefined) return memo[num]
         if (num <= 2) return 1
         let res = fib(num - 1, memo) + fib(num - 2, memo)
@@ -37,7 +46,7 @@ const Input: React.FC<{ input: number, handleInputChange: any, numInputRef: any 
     }
 
     const result = fib(input)
-    
+
     return (
         <div className='input-container'>
             <input
