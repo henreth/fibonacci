@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nasavision/static/css/main.f12db2b4.css",
+    "main.js": "/nasavision/static/js/main.cd477072.js",
+    "index.html": "/nasavision/index.html",
+    "main.f12db2b4.css.map": "/nasavision/static/css/main.f12db2b4.css.map",
+    "main.cd477072.js.map": "/nasavision/static/js/main.cd477072.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f12db2b4.css",
+    "static/js/main.cd477072.js"
+  ]
+}
