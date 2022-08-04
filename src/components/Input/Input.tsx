@@ -65,4 +65,4 @@ const Input: React.FC<{ input: number, handleInputChange: any, numInputRef: any 
     )
 }
 
-export default Input
+export default Input;
