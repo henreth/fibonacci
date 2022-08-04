@@ -1,0 +1,14 @@
+@use './components/App/App';
+@use './components/Header/Header';
+@use './components/Input/Input';
+
+body {
+    margin: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color:aliceblue;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(46, 46, 46);
+  }
+  
+  

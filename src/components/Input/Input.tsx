@@ -1,5 +1,4 @@
 import React from "react"
-import './Input.css'
 
 const Input: React.FC<{ input: number, handleInputChange: any, numInputRef: any }> = ({ input, handleInputChange, numInputRef }) => {
 
