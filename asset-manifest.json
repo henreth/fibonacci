@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fibonacci/static/css/main.f12db2b4.css",
+    "main.css": "/fibonacci/static/css/main.c6b77d37.css",
     "main.js": "/fibonacci/static/js/main.cd477072.js",
     "index.html": "/fibonacci/index.html",
-    "main.f12db2b4.css.map": "/fibonacci/static/css/main.f12db2b4.css.map",
+    "main.c6b77d37.css.map": "/fibonacci/static/css/main.c6b77d37.css.map",
     "main.cd477072.js.map": "/fibonacci/static/js/main.cd477072.js.map"
   },
   "entrypoints": [
-    "static/css/main.f12db2b4.css",
+    "static/css/main.c6b77d37.css",
     "static/js/main.cd477072.js"
   ]
 }
